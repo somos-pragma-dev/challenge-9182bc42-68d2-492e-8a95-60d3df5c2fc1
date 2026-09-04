@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <h2>Panel de Administración</h2>
+    <ul>
+        {% for profile in profiles %}
+        <li>{{ profile.user.username }} - {{ profile.bio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
